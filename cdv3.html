@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--https://dribbble.com/shots/10783906-Portfolio-Personal-Website/attachments/2449151?mode=media-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio personal</title>
+    <style>
+        body {
+            background: #0f0c29;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+        }
+        table {
+            text-align: justify;
+        }
+
+        
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .image-container img {
+            height: 300px;
+            border-radius: 50%;
+            position: relative;
+            z-index: 1;
+        }
+
+        .image-container::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 390px; 
+            height: 390px; 
+            background-color: rgb(30, 27, 43);
+            border-radius: 50%;
+            z-index: 0;
+        }
+        
+
+        .image-container::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px; 
+            height: 400px; 
+            background-color: white;
+            border-radius: 50%;
+            z-index: 0;
+            
+        }
+
+        .animaciones_botones {
+            background-color: darkorange;
+            border-color: darkorange;
+            text-align: center;
+            border-radius: 5px;
+            border-bottom-width: 10px;
+            border-top-width: 10px;
+            border-left-width: 10px;
+            border-right-width: 10px;
+            width: auto; 
+            height: auto ;
+            color:white;
+
+        }
+        
+        .animaciones_botones:hover {
+            background-color: rgb(3, 194, 194);
+            border-color: lime;
+            width: auto; 
+            height: auto ;
+            border-radius: 100px;
+        }
+
+        h1 {
+            color: white;
+            font-family: Goudy Stout;
+            text-align: center;
+        }
+
+        .animacion2 {
+            font-family: Aptos;
+            width: 120px;
+            color: white;
+            text-align: justify;
+        }
+
+        .animacion2:hover {
+            background-color: chartreuse;
+            text-align: center;
+            width: 120px;
+            height: 35px;
+            color: black;
+            border-radius: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <table id="principal">
+        <tr>
+            <td style="width: 40px;"></td>
+            <td><label style="font-family: Curlz MT; color: white;">Diego González</label></td>
+            <td style="width: 40px;"></td>
+            <td><a href="#sobre" style="text-decoration: none;"><div class="animacion2">Sobre mi</div></a></td>
+            <td style="width: 75px;"></td>
+            <td><a href="#conocimientos" style="text-decoration: none;"><div class="animacion2">Conocimientos</div></a></td>
+            <td style="width: 75px;"></td>
+            <td><a href="#idiomas" style="text-decoration: none;"><div class="animacion2">Idiomas</div></a></td>
+            <td style="width: 75px;"></td>
+            <td><a href="#contactos" style="text-decoration: none;"><button class="animaciones_botones" >Contacto</button></a></td>
+            <td style="width: 40px;"></td>
+        </tr>
+        <tr style="height: 200px;"></tr>
+        <tr>
+            <td style="width: 40px;"></td>
+            <td><label style="font-family: Showcard Gothic; color: white; text-align: right; font-size: 25px ;">Hola!</label></td>
+        </tr>
+        <tr>
+            <td style="width: 40px;"></td>
+            <td style="width:fit-content;"><label style="font-family: Showcard Gothic; color: white; text-align: right; font-size: 75px ; font-display: inline; ">Soy Diego González</label></td>
+            <td style="width: 40px;"></td>
+            <td style="width: 40px;"></td>
+            <td style="width: 40px;"></td>
+            <td style="width: 40px;"></td>
+            <td><div class="image-container">
+                <img src="foto.jpeg" >
+            </div>
+            </td>
+        </tr>
+        <tr style="height: 75px;">
+            <td style="width: 40px;"></td>
+            <td ><label style="font-family: Stencil; color: white; text-align: right; font-size: 35px ;">Estudiante</label></td>
+        </tr>
+        <tr>
+            <td style="width: 40px;"></td>
+            <td ><label style="font-family: Cascadia Mono; color: white; text-align: right; font-size: 15px ;">Quiero aprender cosas nuevas y mejorar mis conocimientos generales.</label></td>
+        </tr>
+        <tr style="height: 75px;"></tr>
+        <tr>
+            <td style="width: 40px;"></td>
+            <td style="width: 150px;"><a href="#habilidades" style="text-decoration: none;"><button class="animaciones_botones" >Habilidades</button></a></td>
+            <td> <a href="#educacion" style="text-decoration: none;"><div class="animacion2"> Educacion</div></a></td>
+        </tr>
+    </table>
+
+    <h1 id="sobre">Sobre mi</h1>
+    <div><marquee><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsdodKDCG40MOo7Lu3W8DnBcrLc9hJT-p1VQ&s"></marquee></div>
+    <p style="color: white; text-align:center; font-family:Tempus Sans ITC;">Soy una persona que le gusta aprender, autodidacta,
+        <br>
+        cooperativo y responsable. Me gusta el trabajo en equipo y
+        <br>    
+        me adapto rápidamente.</p>
+    <table>
+        <tr style="color: white; height: 35px ;">
+            <td>Nombre</td>
+            <td style="width: 25px; text-align:center;">:</td>
+            <td>Diego Guillermo González Salguero</td>
+        </tr>
+        <tr style="color: white; height: 35px ;">
+            <td>Correo</td>
+            <td style="width: 25px; text-align:center;">:</td>
+            <td>diegofagosa@gmail.com</td>
+        </tr>
+        <tr>
+            <td><a href="#principal"><button class="animaciones_botones" >Regresar al inicio</button></a></td>
+        </tr>
+    </table>
+
+    <h1 id="conocimientos">Conocimientos</h1>
+    <div><marquee><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJnevzTvmYJS6EH6YJ5buDmQXJndc8feY6cg&s"></marquee></div>
+    <table>
+        <tr>
+            <td style="background-color: darkorange; color:white; width: 100px; height: 100px;">SQL Básico</td>
+            <td style="width: 15px; background-color: rgba(0, 0, 0, 0.582);"></td>
+            <td style="color: white; width: 100px; height: 100px;">Python Intermedio</td>
+        </tr>
+        <tr style="height: 15px;"><td style="border:rgba(0, 0, 0, 0.582); background-color: rgba(0, 0, 0, 0.582); width:auto;"></td> <td style=" border-color:rgba(0, 0, 0, 0.582);background-color: rgba(0, 0, 0, 0.582); width:auto;"> <td style="border-color:rgba(0, 0, 0, 0.582);background-color: rgba(0, 0, 0, 0.582); width:auto;"></td></td></tr>
+        <tr>
+            <td style="color: white; width: 100px; height: 100px;">JavaScript Intermedio</td>
+            <td style="width: 15px; background-color: rgba(0, 0, 0, 0.582);"></td>
+            <td style="color: white; width: 100px; height: 100px;">HTML, CSS Intermedio</td>
+        </tr>
+        <tr>
+            <td><a href="#principal"><button class="animaciones_botones" >Regresar al inicio</button></a></td>
+        </tr>
+    </table>
+
+    <h1 id="idiomas">Idiomas</h1>
+    <div><marquee><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoW83x3Aqy40dnmWTdfJWdaKzGK4MJ9y5oeg&s"></marquee></div>
+    <table>
+        <tr style="color: white; height: 35px ;">
+            <td>Español</td>
+            <td style="width: 25px; text-align:center;">:</td>
+            <td>Nativo</td>
+        </tr>
+        <tr style="color: white; height: 35px ;">
+            <td>Ingles</td>
+            <td style="width: 25px; text-align:center;">:</td>
+            <td>Intermedio</td>
+        </tr>
+        <tr style="color: white; height: 35px ;">
+            <td>Alemán</td>
+            <td style="width: 25px; text-align:center;">:</td>
+            <td>Básico</td>
+        </tr>
+        <tr>
+            <td><a href="#principal"><button class="animaciones_botones" >Regresar al inicio</button></a></td>
+        </tr>
+    </table>
+
+    <h1 id="contactos">Contacto</h1>
+    <div><marquee><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtuvt55yKOTA02nMNIGMpMyotX2S5d7qUJRw&s"></marquee></div>
+    <h2 style="color: white; font-size: 30px ;">Hablemos</h2>
+    <p style="color: white;">Aquí esta mi información de Contacto:</p>
+    <p style="color:darkorange; font-size: 25px;">diegofagosa@gmail.com</p>
+    <p style="color: white;">Whatsapp : +502 4866-0856</p>
+    <a href="#principal"><button class="animaciones_botones" >Regresar al inicio</button></a>
+
+    <h1 id="habilidades">Habilidades</h1>
+    <div><marquee><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIVfJohnJB8i0nskyqjKkqi4Sflf-njADADA&s"></marquee></div>
+    <p style="color: white; text-align:center; font-family:Tempus Sans ITC;">Soy una persona que le gusta aprender, autodidacta,
+        <br>
+        cooperativo y responsable. Me gusta el trabajo en equipo y
+        <br>    
+        me adapto rápidamente.</p>
+    <table>
+        <tr style="color: white; height: 35px ;">
+            <td>Liderazgo</td>
+        </tr>
+        <tr style="color: white; height: 35px ;">
+            <td>Comuniación asertiva</td>
+        </tr>
+        <tr style="color: white; height: 35px ;">
+            <td>Flexible</td>
+        </tr>
+        <tr style="color: white; height: 35px ;">
+            <td>Resolución de problemas</td>
+        </tr>
+        <tr style="color: white; height: 35px ;">
+            <td>Cooperativo</td>
+        </tr>
+        <tr style="color: white; height: 35px ;">
+            <td>Trabajo en equipo</td>
+        </tr>
+        <tr>
+            <td><a href="#principal"><button class="animaciones_botones" >Regresar al inicio</button></a></td>
+        </tr>
+    </table>
+
+    <h1 id="educacion">Educacion</h1>
+    <table>
+        <tr>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1xQNoG1OxopnMlFJ2wr6LNJBJTr8B-NDb_Q&s" style="width: 350px; border-radius:5px;"></td>
+        </tr>
+        <tr>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWqDDQfnhO94KvIPLKAAzNw7-M57gXDhpOIg&s" style="width: 20px; height: 20px; border-radius: 50%;"> 2010 - Presente</td>
+            <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8aAwnS3kcKa8SyWCPkcBH3cAbyE0Bg-HFuw&s" style="width: 20px; height:20px; border-radius: 50%;"> 5to.</td>
+        </tr>
+        <tr>
+            <td><p style="font-family: Cascadia Mono; color: white; text-align: right; font-size: 30px ;"> Suizo Americano </p> </td>
+        </tr>
+        <tr>
+            <td><p style="font-family: Cascadia Mono; color: rgba(255, 255, 255, 0.507)">5to. bachillerato en <br>
+                ciencias y letras con <br>
+                orientación en <br  >
+                computación</p></td>
+        </tr>
+        <tr>
+            <td><a href="#principal"><button class="animaciones_botones" >Regresar al inicio</button></a></td>
+        </tr>
+    </table>
+
+</body>
+</html>
